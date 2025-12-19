@@ -5,9 +5,8 @@
 
 
 function randomSymbol(str) {
-  if (typeof str !== 'string' || str.length === 0) return '';
   const index = Math.floor(Math.random() * str.length);
-  return str[index];
+  return str.charAt(index);
 }
 
 module.exports = { randomSymbol };

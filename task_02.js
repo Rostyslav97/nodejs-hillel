@@ -9,8 +9,4 @@
 // Якщо буде потрібно додавати додаткові перевірки — це буде вказано в умові.
 
 
-module.exports = (a, b, c) => {
-  if (a >= b && a >= c) return a;
-  if (b >= a && b >= c) return b;
-  return c;
-};
+module.exports = (a, b, c) => Math.max(a,b,c);
