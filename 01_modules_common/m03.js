@@ -1,0 +1,1 @@
+module.exports.stringLength = (str='') => str.length;
