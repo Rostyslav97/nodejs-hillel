@@ -1,0 +1,9 @@
+{
+    "one": 11,
+    "two": "string",
+    "three": true,
+    "four": [
+        "hi",
+        "hello"
+    ]
+}

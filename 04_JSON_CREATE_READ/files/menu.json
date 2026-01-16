@@ -1,0 +1,14 @@
+{
+  "id": 7373,
+  "delete": true,
+  "null_data": null,
+  "number": 123.345,
+  "popup": {
+    "menuitem": [
+      {
+        "value": "New",
+        "onclick": "createItem()"
+      }
+    ]
+  }
+}
