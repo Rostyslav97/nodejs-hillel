@@ -6,26 +6,11 @@
 
 // В налаштуваннях csv-parse тут і в інших тасках використовуйте МІНІМАЛЬНИЙ набір параметрів
 
-import fs from 'fs';
-import { parse } from 'csv-parse';
+import {readCSVFile} from './read_file.js';
 
-export async function task_01(filePath) {
-  return new Promise((resolve, reject) => {
-    const result = [];
-
-    fs.createReadStream(filePath)
-      .pipe(parse({
+export async function task_01 (filename) {
+    return readCSVFile(filename, {
         columns: true,
         trim: true
-      }))
-      .on('data', (row) => {
-        result.push(row);
-      })
-      .on('end', () => {
-        resolve(result);
-      })
-      .on('error', (err) => {
-        reject(err);
       });
-  });
 }
