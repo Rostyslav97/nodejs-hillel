@@ -1,0 +1,7 @@
+include head.pug
+
+div
+    ul
+        each file in files
+            li.item
+                a(href=`/storage/${file}` target="_blank")= file
