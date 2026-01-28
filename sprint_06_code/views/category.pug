@@ -1,0 +1,12 @@
+extends template.pug
+
+block content
+  .container.mt-4
+    .row
+      .col-12
+        h1.text-center.mb-4= "Categories"
+      .col-12
+        ul
+          each category in categories
+            li
+              a.text-capitalize(href=`/category/${category}`)= category

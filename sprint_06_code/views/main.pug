@@ -1,0 +1,14 @@
+extends template.pug
+
+include mixins/product_card.pug
+
+block content
+  .container.mt-4
+    each section in sections
+      .row
+        .col-12
+          h1.text-center.mb-4.text-capitalize= section.category
+
+      .row
+        each item in section.items
+          +productCard(item)
