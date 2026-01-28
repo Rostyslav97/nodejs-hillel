@@ -1,0 +1,10 @@
+extends template
+
+block content
+  .container.mt-4
+    h1.text-center.mb-4 Categories
+
+    ul.list-group
+      each category in categories
+        li.list-group-item.text-center
+          a(href=`/category/${category}`)= category

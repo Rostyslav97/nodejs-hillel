@@ -2,22 +2,23 @@ extends template
 
 block content
   .container.mt-4
-    //- h1.text-center.mb-4 Тут виведіть назву категорії
+    h1.text-center.mb-4= category
+
     if goods.length
       .row
-        //- Додайте цикл
+        each item in goods
           .col-md-3.mb-4
             .card.h-100
               .p-3
-                img.card-img-top(посилання на зображення)
+                img.card-img-top(src=item.image)
               .card-body
-                h5.card-title назва товару
-                p.card-text опис товару
+                h5.card-title= item.title
+                p.card-text= item.description
                 p.card-text
-                  b Price: ціна товару
+                  b Price: #{item.price}$
                 p.card-text
-                  | In stock: наявність товару
+                  | In stock: #{item.stock}
               .card-footer
-                a.btn.btn-primary(посилання на товар) View Details
+                a.btn.btn-primary(href='#') View Details
     else
       .alert.alert-warning.text-center No products found in this category.

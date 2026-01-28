@@ -1,21 +1,36 @@
-extends template.pug
+extends template
 
 block content
   .container.mt-4
 
+    h1.text-center.mb-4 Phones
     .row
-      .col-12
-      //- h1.text-center.mb-4  Тут виведіть назву категорії
-      //- each item in some-goods Тут напишіть цикл, який перебирає товари категорії some-goods
+      each item in phones
         .col-md-3.mb-4
           .card.h-100.p-2
-            img.card-img-top(тут виведіть посилання на зображення)
+            img.card-img-top(src=item.image)
             .card-body
-              h5.card-title тут виведіть назву товару
-              p.card-text тут опис товару
+              h5.card-title= item.title
+              p.card-text= item.description
               p.card-text
-                b Price: ціну товару
+                b Price: #{item.price}$
               p.card-text
-                | In stock: наявніть товару
+                | In stock: #{item.stock}
             .card-footer
-              a.btn.btn-primary(посилання на товар) View Details
+              a.btn.btn-primary(href=`/category/${item.category}`) View Details
+
+    h1.text-center.mb-4.mt-5 Laptops
+    .row
+      each item in laptops
+        .col-md-3.mb-4
+          .card.h-100.p-2
+            img.card-img-top(src=item.image)
+            .card-body
+              h5.card-title= item.title
+              p.card-text= item.description
+              p.card-text
+                b Price: #{item.price}$
+              p.card-text
+                | In stock: #{item.stock}
+            .card-footer
+              a.btn.btn-primary(href=`/category/${item.category}`) View Details
