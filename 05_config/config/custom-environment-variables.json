@@ -1,0 +1,8 @@
+{
+  "server": {
+    "port": "PORT"
+  },
+  "db": {
+    "url": "DB_URL"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "type": "module",
+  "scripts": {
+    "start":  "node app.js",
+    "dev": "node --env-file=.env.dev app.js",
+    "prod": "node --env-file=.env.prod app.js"
+  }
+}

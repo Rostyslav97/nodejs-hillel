@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Login
+  if error
+    p(style='color: red;')= error
+  form(action='/login' method='POST')
+    div
+      label(for='username') Username:
+      input(type='text' id='username' name='username' value='admin' required)
+    div
+      label(for='password') Password:
+      input(type='text' id='password' name='password' value='pass123' required)
+    div
+      button(type='submit') Login

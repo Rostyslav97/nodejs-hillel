@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title= title || 'Express + Pug'
+    style.
+      nav { background: #f0f0f0; padding: 10px; margin-bottom: 20px; }
+      nav a { margin-right: 15px; }
+      .user-info { float: right; }
+  body
+    nav
+      a(href='/') Home
+      a(href='/page') Protected Page
+      .user-info
+        if username
+          span Welcome, #{username}! 
+          a(href='/logout') Logout
+        else
+          a(href='/login') Login
+    
+    block content
