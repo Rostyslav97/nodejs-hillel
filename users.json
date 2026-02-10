@@ -1,0 +1,20 @@
+[
+  {
+    "username": "Alex",
+    "password": "99fs",
+    "role": "user",
+    "email": "alex@mail.ua"
+  },
+  {
+    "username": "Maria",
+    "password": "mypass",
+    "role": "user",
+    "email": "maria@mail.ua"
+  },
+  {
+    "username": "Admin",
+    "password": "admin123",
+    "role": "admin",
+    "email": "admin@mail.ua"
+  }
+]

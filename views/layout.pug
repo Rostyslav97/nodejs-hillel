@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title My App
+    style.
+      .nav a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #007bff;
+      }
+      .nav a:hover {
+        text-decoration: underline;
+      }
+      .auth a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #007bff;
+      }
+      .auth a:hover {
+        text-decoration: underline;
+      }
+  body
+    if user
+      p Hello #{user.username} | #{user.email} | Role: #{user.role}
+      a(href="/logout") Logout
+    else
+      .auth
+        a(href="/login") Login
+        a(href="/register") Register
+
+    hr
+
+    .nav
+      a(href="/about") About
+      a(href="/only-users") Only Users
+      a(href="/admin") Admin
+
+    hr
+
+    block content
