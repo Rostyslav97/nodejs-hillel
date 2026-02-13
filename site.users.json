@@ -1,0 +1,189 @@
+[{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cad"
+  },
+  "name": "Alex Petrov",
+  "age": 28,
+  "notes": "Backend developer, focuses on Node.js",
+  "active": true,
+  "role": "admin",
+  "address": {
+    "country": "Ukraine",
+    "street": "Shevchenko Ave, 12"
+  },
+  "tags": [
+    "JavaScript",
+    "Node.js",
+    "MongoDB"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cae"
+  },
+  "name": "Maria Ivanova",
+  "age": 24,
+  "notes": "Frontend student",
+  "active": true,
+  "role": "user",
+  "address": {
+    "country": "Poland",
+    "street": "Krakowska, 8"
+  },
+  "tags": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1caf"
+  },
+  "name": "John Smith",
+  "age": 32,
+  "notes": "Team moderator, reviews code",
+  "active": true,
+  "role": "moderator",
+  "address": {
+    "country": "Germany",
+    "street": "Hauptstrasse, 21"
+  },
+  "tags": [
+    "JavaScript",
+    "TypeScript",
+    "React"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cb0"
+  },
+  "name": "Olena Kovalenko",
+  "age": 21,
+  "notes": "Learning fullstack development",
+  "active": true,
+  "role": "user",
+  "address": {
+    "country": "Ukraine",
+    "street": "Hrushevskoho, 5"
+  },
+  "tags": [
+    "JavaScript",
+    "React",
+    "Node.js"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cb1"
+  },
+  "name": "Dmytro Bondar",
+  "age": 35,
+  "notes": "System architect",
+  "active": false,
+  "role": "admin",
+  "address": {
+    "country": "Czech Republic",
+    "street": "Karlova, 14"
+  },
+  "tags": [
+    "Java",
+    "Spring",
+    "Docker"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cb2"
+  },
+  "name": "Anna Müller",
+  "age": 27,
+  "notes": "Moderator of study group",
+  "active": true,
+  "role": "moderator",
+  "address": {
+    "country": "Austria",
+    "street": "Ringstrasse, 3"
+  },
+  "tags": [
+    "Python",
+    "Django",
+    "PostgreSQL"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cb3"
+  },
+  "name": "Ivan Horvat",
+  "age": 23,
+  "notes": "Computer science student",
+  "active": true,
+  "role": "user",
+  "address": {
+    "country": "Croatia",
+    "street": "Savska, 44"
+  },
+  "tags": [
+    "C++",
+    "Algorithms",
+    "Data Structures"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cb4"
+  },
+  "name": "Sofia Rossi",
+  "age": 29,
+  "notes": "Learning backend with Python",
+  "active": false,
+  "role": "user",
+  "address": {
+    "country": "Italy",
+    "street": "Via Roma, 19"
+  },
+  "tags": [
+    "Python",
+    "Flask",
+    "MongoDB"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cb5"
+  },
+  "name": "Mark Johnson",
+  "age": 34,
+  "active": true,
+  "role": "moderator",
+  "address": {
+    "country": "USA",
+    "street": "Sunset Blvd, 101"
+  },
+  "tags": [
+    "Linux",
+    "Docker",
+    "Kubernetes"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69694be26bc91e5bc7bc1cb6"
+  },
+  "name": "Yulia Shevchenko",
+  "age": 26,
+  "notes": "Junior QA learning automation",
+  "active": true,
+  "role": "user",
+  "address": {
+    "country": "Ukraine",
+    "street": "Lesi Ukrainky, 7"
+  },
+  "tags": [
+    "JavaScript",
+    "Playwright",
+    "Testing"
+  ]
+}]

@@ -1,0 +1,7 @@
+include _form.pug
+
+div
+    ul
+        each item in urls
+            li
+                a(href=`http://localhost:3100/url/${item.short}` target='_blank')= item.short
