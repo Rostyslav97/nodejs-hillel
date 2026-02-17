@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-hillel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "info": "node info.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rostyslav97/nodejs-hillel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rostyslav97/nodejs-hillel/issues"
+  },
+  "homepage": "https://github.com/Rostyslav97/nodejs-hillel#readme",
+  "dependencies": {
+    "connect-mongo": "^6.0.0",
+    "dotenv": "^17.3.1",
+    "mongodb": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
