@@ -1,0 +1,33 @@
+REST - архітектура
+- сервіси (API)
+- Web app (сайти)
+Стандартні методи HTTP:
+GET, POST, Patch, PUT
+
+RESTful - додаток побудованний на принципах REST (RESTful API)
+
+https://www.example.com/
+ftp://example.com/file.txt
+mongodb://127.0.0.1:27017/test
+
+Принцип REST
+- клієнт-сервер
+- stateless (сервер не зберігає стан-інформацію про клієнта)(sessions)
+- ресурси
+- єдиний інтерфейс (HTTP методи)
+- HTTP status
+
+Ресурси
+api/users
+api/get-users ---
+api/users - GET
+api/users - POST
+apt/user/5 - GET
+apt/users/5 - Patch
+apt/users/5 - DELETE
+
+Auth & REST
+
+JWT - token
+id, роль, срок дії, підпис
+logout ->

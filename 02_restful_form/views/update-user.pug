@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Оновлення користувача
+  
+  form(action=`/users/${user.id}/update?_method=PUT` method="POST")
+    div
+      label(for="name") Ім'я:
+      input(type="text" id="name" name="name" value=user.name required)
+    
+    div
+      label(for="email") Email:
+      input(type="email" id="email" name="email" value=user.email required)
+    
+    div
+      button(type="submit") Оновити
+      a(href="/users") Скасувати

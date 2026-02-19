@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Створення користувача
+  
+  form(action="/users/create" method="POST")
+    div
+      label(for="name") Ім'я:
+      input(type="text" id="name" name="name" required)
+    
+    div
+      label(for="email") Email:
+      input(type="email" id="email" name="email" required)
+    
+    div
+      button(type="submit") Створити
+      a(href="/users") Скасувати

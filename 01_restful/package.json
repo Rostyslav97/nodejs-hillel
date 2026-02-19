@@ -1,0 +1,18 @@
+{
+  "name": "restful-express-app",
+  "version": "1.0.0",
+  "description": "RESTful web application with Express and Pug",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["express", "restful", "pug", "esm"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 Список користувачів
+  a.button(href="/users/create") Створити нового користувача
+  
+  if users.length > 0
+    ul
+      each user in users
+        li
+          strong ID: 
+          span= user.id
+          br
+          strong Ім'я: 
+          span= user.name
+          br
+          strong Email: 
+          span= user.email
+          br
+          a(href=`/users/${user.id}/update`) Редагувати
+  else
+    p Користувачі не знайдені
+  
+  br
+  a(href="/") Повернутися на головну

@@ -1,0 +1,75 @@
+h2 Edit Product
+
+form(method='POST', action=`/products/${product._id}?_method=PUT`)
+  .form-group(class=errors.name ? 'error' : '')
+    label(for='name') Product Name *
+    input(
+      type='text',
+      id='name',
+      name='name',
+      value=product.name,
+      required
+    )
+    if errors.name
+      span.error= errors.name
+
+  .form-group(class=errors.price ? 'error' : '')
+    label(for='price') Price ($) *
+    input(
+      type='number',
+      id='price',
+      name='price',
+      value=product.price,
+      min='0',
+      step='0.01',
+      required
+    )
+    if errors.price
+      span.error= errors.price
+
+  .form-group(class=errors.category ? 'error' : '')
+    label(for='category') Category *
+    select(id='category', name='category', required)
+      each cat in categories
+        option(value=cat, selected=(product.category === cat))= cat
+    if errors.category
+      span.error= errors.category
+
+  .form-group(class=errors.quantity ? 'error' : '')
+    label(for='quantity') Quantity (pcs)
+    input(
+      type='number',
+      id='quantity',
+      name='quantity',
+      value=product.quantity,
+      min='0'
+    )
+    if errors.quantity
+      span.error= errors.quantity
+
+  .form-group(class=errors.description ? 'error' : '')
+    label(for='description') Description
+    textarea(
+      id='description',
+      name='description'
+    )= product.description
+    if errors.description
+      span.error= errors.description
+
+  .form-group
+    .checkbox-group
+      input(
+        type='checkbox',
+        id='inStock',
+        name='inStock',
+        checked=product.inStock
+      )
+      label(for='inStock', style='margin: 0;') In Stock
+
+  .form-actions
+    a.btn.btn-secondary(href='/products') ← Cancel
+    button.btn.btn-success(type='submit') ✓ Save Changes
+
+
+form(method="POST" action=`/products/${product._id}?_method=DELETE`)
+  button(type='submit') DELETE

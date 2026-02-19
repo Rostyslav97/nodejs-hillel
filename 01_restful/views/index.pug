@@ -1,0 +1,117 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title= title
+    style.
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 10px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      }
+      h1 {
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+      }
+      .endpoints {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+      .endpoint {
+        margin: 15px 0;
+        padding: 10px;
+        background: white;
+        border-left: 4px solid #667eea;
+        border-radius: 4px;
+      }
+      .method {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        margin-right: 10px;
+        color: white;
+        font-size: 12px;
+      }
+      .get { background: #28a745; }
+      .post { background: #ffc107; }
+      .put { background: #17a2b8; }
+      .delete { background: #dc3545; }
+      .path {
+        font-family: monospace;
+        color: #333;
+      }
+      .description {
+        color: #666;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      .test-section {
+        margin-top: 30px;
+        padding: 20px;
+        background: #e7f3ff;
+        border-radius: 8px;
+      }
+      code {
+        background: #2d2d2d;
+        color: #f8f8f2;
+        padding: 15px;
+        border-radius: 5px;
+        display: block;
+        overflow-x: auto;
+        margin: 10px 0;
+      }
+  body
+    .container
+      h1= title
+      p.subtitle= message
+      
+      .endpoints
+        h2 Доступні API endpoints:
+        
+        .endpoint
+          span.method.get GET
+          span.path /api/users
+          .description Отримати список всіх користувачів
+        
+        .endpoint
+          span.method.get GET
+          span.path /api/users/:id
+          .description Отримати користувача за ID
+        
+        .endpoint
+          span.method.post POST
+          span.path /api/users
+          .description Створити нового користувача
+        
+        .endpoint
+          span.method.put PUT
+          span.path /api/users/:id
+          .description Оновити користувача
+        
+        .endpoint
+          span.method.delete DELETE
+          span.path /api/users/:id
+          .description Видалити користувача
+      
