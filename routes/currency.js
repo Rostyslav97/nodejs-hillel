@@ -5,6 +5,7 @@ dotenv.config();
 const router = express.Router();
 const PRIVATBANK_API_URL = process.env.PRIVATBANK_API_URL;
 
+const SUPPORTED_CURRENCIES = ["USD", "EUR"];
 
 router.get("/", async (req, res) => {
   try {
@@ -14,10 +15,9 @@ router.get("/", async (req, res) => {
     }
 
     const data = await response.json();
-
     const rates = {};
     data.forEach(item => {
-      if (["USD", "EUR"].includes(item.ccy)) {
+      if (SUPPORTED_CURRENCIES.includes(item.ccy)) {
         rates[item.ccy] = {
           buy: parseFloat(item.buy),
           sale: parseFloat(item.sale)
@@ -38,9 +38,9 @@ router.get("/", async (req, res) => {
 router.get("/:curr", async (req, res) => {
   const curr = req.params.curr.toUpperCase();
 
-  if (!["USD", "EUR"].includes(curr)) {
+  if (!SUPPORTED_CURRENCIES.includes(curr)) {
     return res.status(400).json({
-      error: "Invalid currency. Supported currencies are USD and EUR."
+      error: `Invalid currency. Supported currencies are ${SUPPORTED_CURRENCIES.join(", ")}.`
     });
   }
 
@@ -54,7 +54,7 @@ router.get("/:curr", async (req, res) => {
 
     const rates = {};
     data.forEach(item => {
-      if (["USD", "EUR"].includes(item.ccy)) {
+      if (SUPPORTED_CURRENCIES.includes(item.ccy)) {
         rates[item.ccy] = {
           buy: parseFloat(item.buy),
           sale: parseFloat(item.sale)
