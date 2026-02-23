@@ -1,0 +1,74 @@
+{
+  "id": "cpu-intel-i7-14700k",
+  "type": "processor",
+  "brand": "Intel",
+  "model": "Core i7-14700K",
+  "series": "Core i7",
+  "generation": "14th Gen",
+  "socket": "LGA1700",
+  "architecture": "Raptor Lake Refresh",
+  "cores": {
+    "total": 20,
+    "performance": 8,
+    "efficient": 12
+  },
+  "threads": 28,
+  "frequency": {
+    "base": 3.4,
+    "turbo": 5.6
+  },
+  "cache": {
+    "l2": "28 MB",
+    "l3": "33 MB"
+  },
+  "tdp": {
+    "base": 125,
+    "max": 253
+  },
+  "integratedGraphics": {
+    "model": "Intel UHD Graphics 770",
+    "baseFrequency": 300,
+    "maxFrequency": 1600
+  },
+  "memorySupport": {
+    "type": ["DDR4", "DDR5"],
+    "maxFrequency": {
+      "DDR4": 3200,
+      "DDR5": 5600
+    },
+    "channels": 2,
+    "maxCapacity": "192 GB"
+  },
+  "pciExpress": {
+    "version": "5.0",
+    "lanes": 20
+  },
+  "technologies": [
+    "Intel Turbo Boost Max 3.0",
+    "Intel Hyper-Threading",
+    "Intel VT-x",
+    "Intel VT-d",
+    "Intel AES-NI"
+  ],
+  "coolerIncluded": false,
+  "unlockedMultiplier": true,
+  "recommendedUsage": [
+    "gaming",
+    "workstation",
+    "streaming"
+  ],
+  "dimensions": {
+    "package": "45 x 37.5 mm"
+  },
+  "warranty": {
+    "period": 36,
+    "manufacturer": "Intel"
+  },
+  "price": {
+    "currency": "UAH",
+    "value": 18999
+  },
+  "availability": "in_stock",
+  "rating": 4.8,
+  "reviewsCount": 126
+}

@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-hillel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "seed.js",
+  "type": "module",
+  "scripts": {
+    "seed": "node seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rostyslav97/nodejs-hillel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rostyslav97/nodejs-hillel/issues"
+  },
+  "homepage": "https://github.com/Rostyslav97/nodejs-hillel#readme",
+  "dependencies": {
+    "mongoose": "^9.2.1"
+  }
+}
