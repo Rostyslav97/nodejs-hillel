@@ -1,4 +1,3 @@
-import { use } from 'react';
 import connectDB from './config/database.js';
 import User from './models/User.js';
 import mongoose from 'mongoose';
@@ -14,6 +13,14 @@ const stepOne = async () => {
 }
 
 // const stepTwo = async () => {
+//     const user = await User.findOne({ "title": "Alex" });
+//     user.title = 'Bob';
+//     user.age = 88;
+//     await user.save();
+//     console.log(user);
+// }
+
+// const stepTwo = async () => {
 //     const user = await User.insertOne({
 //         title: "Olga",
 //         age: 444
@@ -27,7 +34,7 @@ const stepTwo = async () => {
     const user = await User.findOneAndUpdate(
         {"title" : "Alex"}, 
         {"title" : "Pavlo", age : 55},
-        {runValidators : false, new : true}
+        {runValidators : true, new : true}
     )
     console.log(user);
 }
