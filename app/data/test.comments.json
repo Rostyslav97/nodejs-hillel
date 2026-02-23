@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "6985bfbb29bc7c6860f9344c"
+  },
+  "article": { "$oid": "6985c0c829bc7c6860f93456" },
+  "username": "Olga Smirnova",
+  "text": "Great initiative! I hope more cities follow this example.",
+  "createdAt": "2026-02-06T10:15:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6985bfbb29bc7c6860f9344d"
+  },
+  "article": { "$oid": "6985c0c829bc7c6860f93456" },
+  "username": "Dmitry Kuznetsov",
+  "text": "I signed up as a volunteer last week. Looking forward to helping out!",
+  "createdAt": "2026-02-06T11:45:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6985bfbb29bc7c6860f9344e"
+  },
+  "article": { "$oid": "6985c0c829bc7c6860f93457" },
+  "username": "Anna Belova",
+  "text": "Free workshops are exactly what the community needs. Any plans for a Python course?",
+  "createdAt": "2026-02-05T16:30:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6985bfbb29bc7c6860f9344f"
+  },
+  "article": { "$oid": "6985c0c829bc7c6860f93456" },
+  "username": "Sergey Ivanov",
+  "text": "Visited the hub yesterday — the space is modern and well-equipped.",
+  "createdAt": "2026-02-05T18:00:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6985bfbb29bc7c6860f93450"
+  },
+  "article": { "$oid": "6985c0c829bc7c6860f93457" },
+  "username": "Elena Morozova",
+  "text": "Would love to see mentorship sessions on weekends too!",
+  "createdAt": "2026-02-06T08:20:00.000Z"
+}]

@@ -1,0 +1,33 @@
+extends template
+
+block content
+    .row
+        .col-12
+            a(href="/") Back to list
+        if article
+            article.mb-5.col-12
+                h1= article.title
+                if article.summary
+                    p= article.summary
+                if article.content
+                    div= article.content
+        else
+            p Article not found.
+        
+        hr
+        .col-12
+            h2 Comments
+        if comments && comments.length
+            each comment in comments
+                .col-6
+                    .comment
+                        p
+                        strong= comment.username
+                        |  
+                        small= comment.createdAt ? new Date(comment.createdAt).toLocaleString() : ''
+                        p= comment.text
+        else
+            .col-12
+                p No comments yet.
+        
+        include form

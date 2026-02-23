@@ -1,0 +1,17 @@
+extends template
+
+block content
+    .row
+        .col-12.mb-5
+            h1 Latest News
+        if !articles || articles.length === 0
+            .col-12
+                p No articles yet
+        else
+            each article in articles
+                .col-12.mb-4
+                    article
+                    h2= article.title
+                    if article.summary
+                        p= article.summary
+                    a(href=`/articles/${article._id}`) Read full article

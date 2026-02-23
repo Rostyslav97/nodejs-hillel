@@ -1,0 +1,8 @@
+form(method="post", action=`/article/${article._id}/comments`)
+    .mb-3
+        label(for="username") Username
+        input#username.form-control(type="text", name="username", required)
+    .mb-3
+        label(for="text") Comment
+        textarea#text.form-control(name="text", rows="3", required)
+    button.btn.btn-primary(type="submit") Submit

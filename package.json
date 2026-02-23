@@ -1,0 +1,20 @@
+{
+  "name": "docker-web-dev-demo",
+  "version": "1.0.0",
+  "description": "Express demo for Docker web dev",
+  "main": "app/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app/app.js",
+    "dev": "nodemon --legacy-watch app/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^9.1.5",
+    "morgan": "^1.10.1",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

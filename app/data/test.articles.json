@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "6985c0c829bc7c6860f93456"
+  },
+  "title": "Launch of the Winter Community Initiative",
+  "summary": "City volunteers kicked off a winter aid program to support vulnerable residents.",
+  "content": "The city launched a winter community initiative focused on delivering food, blankets, and heating support to vulnerable residents. Volunteers will coordinate neighborhood deliveries and partner with local shelters. Organizers say the program will run through March and is funded by public donations and private sponsors.",
+  "author": "Maria Volkova",
+  "imageUrl": "https://example.com/images/winter-initiative.jpg",
+  "tags": [
+    "city",
+    "community",
+    "winter"
+  ],
+  "isPublished": true,
+  "publishedAt": "2026-02-06T09:30:00.000Z"
+},
+{
+  "_id": {
+    "$oid": "6985c0c829bc7c6860f93457"
+  },
+  "title": "Tech Hub Opens New Learning Space",
+  "summary": "A new public tech hub opened downtown with free workshops for students.",
+  "content": "A new learning space opened at the downtown tech hub, offering free workshops in web development, data literacy, and product design. The hub plans to host weekly events and mentorship sessions for students and early-career professionals.",
+  "author": "Ivan Petrov",
+  "imageUrl": "https://example.com/images/tech-hub.jpg",
+  "tags": [
+    "education",
+    "technology",
+    "events"
+  ],
+  "isPublished": true,
+  "publishedAt": "2026-02-05T15:00:00.000Z"
+}]
